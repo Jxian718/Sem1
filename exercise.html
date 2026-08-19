@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body
+    {
+       margin: 0;  
+        
+       font-family: Arial, Helvetica, sans-serif;
+    }
+
+    nav
+    {
+        display: flex;
+        background-color:#f5f5f5;
+        align-items: center;
+        padding: 20px;
+        width: ;
+        height: 25px;
+        justify-content: space-around;
+
+    }
+
+    nav > ul
+    {
+        display: flex;
+        gap: 35px;
+        list-style: none;
+        font-weight: 600;
+    }
+
+    .main-container
+    {
+        background-color:  #0051c9;
+        width: 1700px;
+        height: 650px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container
+    {
+        display: flex;
+        gap: 90px;
+        margin-left: 220px;
+    }
+
+
+    .face
+    {
+        width: 350px;
+        border-radius: 50%;
+        
+        
+    }
+
+    .text
+    {
+        color: white;
+        width: 500px;
+        font-size: 25px;
+        padding: 25px ;
+    }
+
+    .one
+    {
+        font-size: 20px;
+        width: 350px;
+    }
+
+    button
+    {
+        background-color: #ff5722;
+        color: white;
+        width: 150px;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        
+    }
+
+    button:hover
+    {
+        background-color: #ff5722;
+    }
+
+    .section2 >h2
+    {
+        text-align: center;
+        justify-content: center;
+        
+    }
+
+    .title
+    {
+        font-size: 35px;
+        text-align: center;
+        padding: 30px;
+    }
+
+    .work
+    {
+        display: flex;
+        justify-content: space-between;
+        gap: 90px;
+        padding: 60px;
+        text-align: center;
+        
+    }
+
+    .first
+    {
+        width: 120px;
+    }
+    
+    .second
+    {
+        width: 120px;
+    }
+
+    .third
+    {
+        width: 120px;
+    }
+
+    .portfolio
+    {
+       background-color: #f5f5f5;
+       width: 1700px;
+       height: 800px;
+
+    }
+
+    .portfolio h2
+    {
+        text-align: center;
+        padding: 20px;
+      
+    }
+
+    .box
+    {
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr;
+        grid-template-rows: 150px 150px;
+        gap: 10px;
+        padding: 20px;
+    }
+
+    .box img
+    {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .box img:first-child
+    {
+        grid-row: 1/3;
+    }
+    
+    
+
+    .contact h2
+    {
+        text-align: center;
+        margin-bottom: 20px;
+        padding: 40px;
+    }
+
+    .contact-box form
+    {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding: 40px;
+
+    }
+
+    .contact-box input
+    {
+        
+        height: 30px;
+        padding: 5px;
+        width: 50%;
+    }
+
+    .contact-box textarea
+    {
+        height: 80px;
+        padding: 5px;
+        width: 50%;
+    }
+
+    .contact-box button
+    {
+        width: 120px;
+        padding: 8px;
+        background-color: #ff5722;
+        color: white;
+        border: none;
+    }
+
+    .contact-info
+    {
+        
+    }
+
+    footer
+    {
+        background-color: #0051c9;
+        color: white;
+        text-align: center;
+        padding: 12px;
+        font-size: 12px;
+        height: 35px;
+        
+    }
+
+    .box one
+    {
+        grid-column: 1/2;
+        
+    }
+
+    
+    
+</style>
+<body>
+    <nav>
+        <h1>Alexis Tan</h1>
+        <ul>
+            <li>Home</li>
+            <li>What I do</li>
+            <li>Portfolio</li>
+            <li>Contact</li>
+        </ul>
+    </nav>
+
+    <div class="main-container">
+        <div class="container">
+            <img class="face" src="avatar.png" alt="">
+            
+            <div class="text">
+             <h1>Hi, I'm Alexis Tan</h1>
+             <p class="one">Full-Stack Developer passionate about creating seamless web experiences</p>
+             <button>View My Work</button>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="section2">
+        <h2 class="title">What I Do</h2>
+
+        <div class="work">
+
+            <div>
+                <img class="first" src="code.jpg" alt="">
+                <h2>Web Development</h2>
+                <p>Creating robust and scalable web applications using modern technologies.</p>
+            </div>
+
+            <div>
+                <img class="second" src="computer.png" alt="">
+                <h2>Responsive Design</h2>
+                <p>Creating beautiful, responsive interfaces that work on any device.</p>
+            </div>
+
+            <div>
+                <img class="third" src="database.jpg" alt="">
+                <h2>Database Management</h2>
+                <p>Designing and optimizing database structures for efficient data handling</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="portfolio">
+        <h2>My Portfolio</h2>
+
+        <div class="box">
+            <div class="one"><img src="portfolio-1.png" alt=""></div>
+            <img src="portfolio-2.png" alt="">
+            <img src="portfolio-3.png" alt="">
+            <img src="portfolio-4.png" alt="">
+            <img src="portfolio-5.png" alt="">
+
+        </div>
+
+    </div>
+
+
+    <div class="contact">
+        <h2>Get In Touch</h2>
+
+        <div class="contact-box">
+
+        <form>
+            <input type="text" placeholder="Your Name">
+            <input type="email" placeholder="Your Email">
+            <input type="text" placeholder="Subject">
+            <textarea placeholder="Your Message"></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+
+        <div class="contact-info">
+            <h2>Contact Information</h2>
+
+            <p>✉ alexis@gmail.com</p>
+            <p>☎ (6012) 345-6789</p>
+            <p>📍 Penang, Malaysia</p>
+
+            <h2>Follow Me</h2>
+
+            <div class="social">
+                <a href="#">GH</a>
+                <a href="#">in</a>
+                <a href="#">𝕏</a>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+    <footer>
+        © 2024 Alexis Tan. All rights reserved.
+    </footer>
+
+
+
+
+    
+</body>
+</html>
